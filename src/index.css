@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+:root{
+  --lightpurple: #2c0b53;
+  --hardblue:#220a41;
+}
+
+body {
+  color:white;
+  background-color: var(--hardblue);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+.main{
+  background-color: var(--lightpurple);
+  color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  position:sticky;
+  top:0;
+
+}
+.profile-auth{
+  display:flex;
+  justify-items: center;
+  flex-direction: row-reverse;
+  
+}
+.profile{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.btn{
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  padding:10px;
+  font-weight: bold;
+  margin: 4px;
+  justify-content: end;
+  width:100px;
+  justify-items: center;
+  border-radius: 3px;
+  cursor:pointer;
+}
+label{
+  color:white;
+}
+#Galerycount{
+  -webkit-column-count:3;
+  -moz-column-count:3;
+  column-count: 3;
+  -webkit-column-width:33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding:5px 12px;
+}
+.Image{
+  padding:5px;
+}
+form{
+  background-color: var(--lightpurple);
+  padding:20px;
+}
+#newImg{
+  background: none;
+  background-color: white;
+  border: none;
+  padding:20px;
+  width: 70%;
+  border-radius: 30px;
+  outline: none;
+}
+#newImg{
+  background-color: white;
+  border: none;
+  padding:20px;
+  width: 70%;
+  border-radius: 30px;
+  outline: none;
+}
+.Generate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.delete{
+  position:absolute;
+  margin:3px;
+  background-color: transparent;
+  cursor:pointer;
+  border: none;
+}
+.btns{
+  padding:10px;
+}
+input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+@media screen and (max-width: 600px) {
+  
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+  }
+  .profile{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .btn{
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    padding:7px;
+    font-weight: bold;
+    margin: 3px;
+    justify-content: end;
+    width:90px;
+    justify-items: center;
+    border-radius: 3px;
+  }
+}
